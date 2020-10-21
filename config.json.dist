@@ -1,0 +1,17 @@
+{
+  "browser": "",
+  "credentials": {
+    "doctor": {
+      "username": "",
+      "password": ""
+    },
+    "user": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "environments": {
+    "qa1": "",
+    "qa2": ""
+  }
+}
