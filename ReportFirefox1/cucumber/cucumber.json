@@ -1,0 +1,558 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15849000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to Medical Portal",
+            "match": {
+              "location": "org.example.steps.hospital.CommonSteps.goToPOrtal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3255000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"doctor\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"doctor\"",
+                  "offset": 11
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.iClickOnLinkOnEnvironment(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 352000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill value from \"LoginLocator\" csv on \"Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginLocator\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Login\"",
+                  "offset": 40
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.fillFromCSV(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2326000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1362000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the \"Patients\" link from menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patients\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 993000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the \"Add Patient\" link from submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Patient\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T11:36:23.995Z",
+        "line": 36,
+        "name": "Add Patient with valid data",
+        "description": "",
+        "id": "doctor-patients;add-patient-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3189000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I add the Add Patient form with:",
+            "match": {
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iAddTheAddPatientFormWith(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Patient Name",
+                  "Maris1"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Contact no",
+                  "2523523523"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Email",
+                  "patito52@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "female"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Address",
+                  "test #5353"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Age",
+                  "30"
+                ]
+              },
+              {
+                "cells": [
+                  "Medical History",
+                  "This is only a test"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1733000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on the \"Add\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1317000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the \"Patients\" link from menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patients\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 733000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the \"Manage Patient\" link from submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Patient\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I validate the new patient \"Maris1\" is in Manage Patients list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Maris1\"",
+                  "offset": 27
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheNewPatientIsInManagePatientsList(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 596000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on \"view\" icon of patient \"Maris1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"view\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Maris1\"",
+                  "offset": 34
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnIconOfPatient(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 390000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I validate the new patient details are",
+            "match": {
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheNewPatientDetailsAre(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Patient Name",
+                  "Maris1"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Mobile Number",
+                  "2523523523"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Email",
+                  "patito52@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Address",
+                  "test #5353"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Age",
+                  "30"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Medical History(if any)",
+                  "This is only a test"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@magui"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16013000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to Medical Portal",
+            "match": {
+              "location": "org.example.steps.hospital.CommonSteps.goToPOrtal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3041000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"doctor\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"doctor\"",
+                  "offset": 11
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.iClickOnLinkOnEnvironment(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 418000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill value from \"LoginLocator\" csv on \"Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginLocator\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Login\"",
+                  "offset": 40
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.fillFromCSV(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2083000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1434000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the \"Patients\" link from menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patients\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1154000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the \"Add Patient\" link from submenu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Patient\"",
+                  "offset": 15
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T11:36:23.982Z",
+        "line": 39,
+        "name": "Add Patient with existing patient email",
+        "description": "",
+        "id": "doctor-patients;add-patient-with-existing-patient-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3166000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I add the Add Patient form with:",
+            "match": {
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iAddTheAddPatientFormWith(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Patient Name",
+                  "Paty Pato"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Contact no",
+                  "2523523523"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Email",
+                  "john@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "female"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Address",
+                  "test #5353"
+                ]
+              },
+              {
+                "cells": [
+                  "Patient Age",
+                  "30"
+                ]
+              },
+              {
+                "cells": [
+                  "Medical History",
+                  "This is only a test"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I validate the following message is displayed \u0027Email already exists .\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Email already exists .\u0027",
+                  "offset": 46
+                }
+              ],
+              "location": "org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheFollowingMessageIsDisplayedEmailAlreadyExists(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@magui"
+          }
+        ]
+      }
+    ],
+    "name": "Doctor Patients",
+    "description": "",
+    "id": "doctor-patients",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/hospital/Doctors/Doctor_patient_add.feature",
+    "tags": [
+      {
+        "name": "@magui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

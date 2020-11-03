@@ -42,7 +42,7 @@ public abstract class AbstractPage {
     public void FillFieldsFromCSV(String fileName) throws IOException {
         String line = "";
         String cvsSplitBy = ",";
-        BufferedReader br = new BufferedReader(new FileReader( "F:\\"+ fileName + ".csv"));
+        BufferedReader br = new BufferedReader(new FileReader( "E:\\"+ fileName + ".csv"));
         while ((line = br.readLine()) != null) {
             String[] fields = line.split(cvsSplitBy);
             WebElement element =  DriverFactory.getDriver().findElement(locators.get(fields[0]));

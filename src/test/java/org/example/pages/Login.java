@@ -2,18 +2,11 @@ package org.example.pages;
 
 //import org.hospitalproy.core.ui.AbstractPage;
 
-import io.cucumber.java.hu.Ha;
-import javafx.beans.binding.MapBinding;
-import javafx.collections.ObservableMap;
 import org.example.core.ui.AbstractPage;
-import org.example.core.ui.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 

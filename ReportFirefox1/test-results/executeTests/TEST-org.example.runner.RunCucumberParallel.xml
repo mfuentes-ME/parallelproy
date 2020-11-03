@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.runner.RunCucumberParallel" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-03T11:36:23" hostname="EQUISPEA-NH01" time="32.762">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Add Patient with existing patient email&quot;, &quot;Optional[Doctor Patients]&quot;)" classname="org.example.runner.RunCucumberParallel" time="28.062"/>
+  <testcase name="runScenario[0](&quot;Add Patient with valid data&quot;, &quot;Optional[Doctor Patients]&quot;)" classname="org.example.runner.RunCucumberParallel" time="32.759"/>
+  <testcase name="testName" classname="org.example.runner.RunCucumberParallel" time="0.0"/>
+  <system-out><![CDATA[
+@magui
+Scenario: Add Patient with existing patient email                             ?[90m# src/test/resources/features/hospital/Doctors/Doctor_patient_add.feature:39?[0m
+
+@magui
+Scenario Outline: Add Patient with valid data                         ?[90m# src/test/resources/features/hospital/Doctors/Doctor_patient_add.feature:36?[0m
+Go to Portal
+Go to Portal
+  ?[32mGiven ?[0m?[32mI go to Medical Portal?[0m                                        ?[90m# org.example.steps.hospital.CommonSteps.goToPOrtal()?[0m
+Click on link
+  ?[32mGiven ?[0m?[32mI go to Medical Portal?[0m                                                ?[90m# org.example.steps.hospital.CommonSteps.goToPOrtal()?[0m
+Click on link
+  ?[32mAnd ?[0m?[32mI click on ?[0m?[32m?[1m"doctor"?[0m?[32m link?[0m                                                ?[90m# org.example.steps.hospital.CommonSteps.iClickOnLinkOnEnvironment(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on ?[0m?[32m?[1m"doctor"?[0m?[32m link?[0m                                        ?[90m# org.example.steps.hospital.CommonSteps.iClickOnLinkOnEnvironment(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI fill value from ?[0m?[32m?[1m"LoginLocator"?[0m?[32m csv on ?[0m?[32m?[1m"Login"?[0m                        ?[90m# org.example.steps.hospital.CommonSteps.fillFromCSV(java.lang.String,java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI fill value from ?[0m?[32m?[1m"LoginLocator"?[0m?[32m csv on ?[0m?[32m?[1m"Login"?[0m                ?[90m# org.example.steps.hospital.CommonSteps.fillFromCSV(java.lang.String,java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Login"?[0m?[32m button?[0m                                           ?[90m# org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Login"?[0m?[32m button?[0m                                   ?[90m# org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Patients"?[0m?[32m link from menu?[0m                                ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Patients"?[0m?[32m link from menu?[0m                        ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Add Patient"?[0m?[32m link from submenu?[0m                          ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Add Patient"?[0m?[32m link from submenu?[0m                  ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI add the Add Patient form with:?[0m                                       ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iAddTheAddPatientFormWith(java.util.Map<java.lang.String, java.lang.String>)?[0m
+  ?[32mWhen ?[0m?[32mI add the Add Patient form with:?[0m                               ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iAddTheAddPatientFormWith(java.util.Map<java.lang.String, java.lang.String>)?[0m
+  ?[32mThen ?[0m?[32mI validate the following message is displayed ?[0m?[32m?[1m'Email already exists .'?[0m ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheFollowingMessageIsDisplayedEmailAlreadyExists(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Add"?[0m?[32m button?[0m                                     ?[90m# org.example.steps.hospital.CommonSteps.iClickOnTheButton(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Patients"?[0m?[32m link from menu?[0m                        ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkMenu(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on the ?[0m?[32m?[1m"Manage Patient"?[0m?[32m link from submenu?[0m               ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnTheLinkFromSubmenu(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI validate the new patient ?[0m?[32m?[1m"Maris1"?[0m?[32m is in Manage Patients list?[0m ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheNewPatientIsInManagePatientsList(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click on ?[0m?[32m?[1m"view"?[0m?[32m icon of patient ?[0m?[32m?[1m"Maris1"?[0m                      ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iClickOnIconOfPatient(java.lang.String,java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI validate the new patient details are?[0m                          ?[90m# org.example.steps.hospital.Doctors.DoctorSteps.iValidateTheNewPatientDetailsAre(java.util.Map<java.lang.String, java.lang.String>)?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+nov 03, 2020 7:36:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+nov 03, 2020 7:36:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>

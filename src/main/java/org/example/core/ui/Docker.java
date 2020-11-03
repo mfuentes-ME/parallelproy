@@ -10,7 +10,7 @@ import java.net.URL;
 
 public class Docker extends AbstractBrowser {
 
-    public static final String URL = "http://192.168.1.25:4444/wd/hub";
+    public static final String URL = "http://192.168.1.10:4444/wd/hub";
 
     @Override
     WebDriver init() {
